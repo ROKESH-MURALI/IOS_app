@@ -1,0 +1,16 @@
+version: 2.0
+
+workflows:
+  ios-workflow:
+    name: iOS Workflow
+    environment:
+      flutter: stable
+    scripts:
+      - name: Install dependencies
+        script: |
+          flutter pub get
+      - name: Build iOS app
+        script: |
+          flutter build ios --release
+    artifacts:
+      - build/ios/iphoneos/*.ipa

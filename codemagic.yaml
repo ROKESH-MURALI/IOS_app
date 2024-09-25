@@ -1,10 +1,11 @@
 version: 1.0
-name: Test iOS App
+workflows:
+  ios_workflow:
+    name: Test iOS App
+    scripts:
+      - name: Build iOS app
+        script: |
+          flutter build ios --release --no-codesign
 
-scripts:
-  - name: Build iOS app
-    script: |
-      flutter build ios --release --no-codesign
-
-artifacts:
-  - build/ios/iphoneos/*.app
+    artifacts:
+      - build/ios/iphoneos/*.app

@@ -1,0 +1,7 @@
+{
+  "name": "HSapp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

@@ -1,0 +1,13 @@
+# Dependency directories
+node_modules/
+platforms/
+plugins/
+
+# Build directories
+www/
+ios/App/build/
+android/app/build/
+
+# System files
+.DS_Store
+Thumbs.db
